@@ -48,6 +48,7 @@ body {
 .main-box {
   display: flex;
   padding: 0.125rem 0.125rem 0 0.125rem;
+  /* 约束屏幕尺寸 */
 }
 .main-box .left {
   flex: 3;
@@ -123,6 +124,11 @@ body {
   color: #fff;
   font-size: 0.25rem;
   font-weight: 400;
+}
+.main-box .panel .panel-title a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
 }
 .main-box .panel .panel-chart {
   height: 3rem;
@@ -243,5 +249,15 @@ body {
   }
   to {
     transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main-box html {
+    font-size: 42px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main-box html {
+    font-size: 80px !important;
   }
 }
