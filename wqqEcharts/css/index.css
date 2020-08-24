@@ -8,7 +8,7 @@ li {
 }
 ::-webkit-scrollbar {
   display: none;
-  /* Chrome Safari */
+ 
 }
 /* 声明字体*/
 @font-face {
